@@ -1,0 +1,23 @@
+.faq{
+  @include conmonent_size;
+}
+.faq-list{
+  li{
+    list-style: none;
+    button{
+      background-color: #444;
+      color: $txt-color;
+      width: 100%;
+      padding: 20px;
+      margin: 10px 0;
+      font-size: $font-size-m;
+    }
+    p{
+      background-color: #666;
+      color: $txt-color;
+      width: 100%;
+      padding: 20px;
+      margin: 10px 0;
+    }
+  }
+}
