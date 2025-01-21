@@ -3,12 +3,13 @@
 }
 .faq-list{
   li{
-    list-style: none;
     button{
+      display: block;
+      text-align: left;
       background-color: #444;
       color: $txt-color;
       width: 100%;
-      padding: 20px;
+      padding: 10px;
       margin: 10px 0;
       font-size: $font-size-m;
     }
@@ -16,7 +17,7 @@
       background-color: #666;
       color: $txt-color;
       width: 100%;
-      padding: 20px;
+      padding: 10px;
       margin: 10px 0;
     }
   }
