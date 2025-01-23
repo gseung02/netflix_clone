@@ -9,9 +9,9 @@
   }
 }
 
-@mixin conmonent_size{
-  width: 70%;
-  margin: 0 auto;
+@mixin component_size{
+  width: 80%;
+  margin: 20px auto;
 }
 
 @mixin responsive($breakpoint) {

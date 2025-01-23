@@ -1,0 +1,71 @@
+.move-slider{
+  @include component_size;
+  position: relative;
+  select{
+    padding: 0.5rem 1rem;
+    margin: 10px 0;
+    margin-right: 20px;
+    border-radius: 3px;
+    background-color: transparent;
+    color: $txt-color;
+    option{
+      color: #222;
+    }
+  }
+  }
+  //기본 화살포에 가상 요소 삭제
+  .slick_prev:before,
+  .slick_next:before{
+    content: '';
+  }
+  .slick_prev,
+  .slick_next{
+    background-color:rgba(0,0,0,0.7);
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    // z-index: 10;
+    width: 40px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    font-size: 20px;
+    cursor: pointer;
+    &:hover{
+      background-color: rgba(255,255,255,0.5);
+      color: black;
+    }
+  }
+  .slick_prev{
+    left: -50px;
+  }
+  .slick_next{
+    right: -50px;
+  }
+  .move-card{
+    position: relative;
+    transition: 0.3s;
+    &:hover{
+      transform: scale(1.05);
+    }
+    span{
+      position: absolute;
+      bottom: 0;
+      left: -10px;
+      font-size: 130px;
+      font-weight: bolder;
+      color: black;
+      text-shadow: -2px -2px 0 #fff, //왼쪽 위
+      2px -2px 0 #fff, //오른쪽 위
+      -2px 2px 0 #fff, //왼쪽 아래
+      2px 2px 0 #fff; //오른쪽 아래
+    }
+    img{
+      margin: 10px auto;
+      width: 90%;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  }

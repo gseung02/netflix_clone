@@ -1,0 +1,33 @@
+footer{
+  @include component_size;
+  padding-top: 20px;
+  a{
+    color: inherit;
+  }
+  select{
+    padding: 0.5rem 1rem;
+    margin: 10px 0;
+    border-radius: 3px;
+    background-color: transparent;
+    color: $txt-color;
+    option{
+      color: #222;
+    }
+  }
+  .f-menu{
+    margin: 20px 0;
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    @include responsive($breakpoint-m){
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include responsive($breakpoint-s){
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  .f-txt{
+    font-size: 12px;
+    margin: 10px 0;
+  }
+}

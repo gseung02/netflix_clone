@@ -1,11 +1,20 @@
-.banner{
-  @include conmonent_size;
-  padding: 20px;
+.wrap{
+  position: relative;
   transition: 0.5s;
   &:hover{
     transform: scale(1.05);
     filter: brightness(1.4);
   }
+}
+.b-icon{
+  position: absolute;
+  top:20px;
+  left: 150px;
+  font-size: 60px;
+}
+.banner{
+  @include component_size;
+  padding: 20px;
 }
 .banner-txt{
   color: $txt-color;

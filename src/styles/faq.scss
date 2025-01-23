@@ -1,25 +1,32 @@
 .faq{
-  @include conmonent_size;
+  @include component_size;
 }
 .faq-list{
   li{
+    margin: 5px;
     button{
-      display: block;
+      display: flex;
+      justify-content: space-between;
       text-align: left;
       background-color: #444;
       color: $txt-color;
       width: 100%;
       padding: 10px;
-      margin: 10px 0;
       font-size: $font-size-m;
+      position: relative;
     }
     p{
       background-color: #666;
       color: $txt-color;
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
+      height: 0;
+      opacity: 0;
+      transition: 0.3s;
       font-size: $font-size-m;
+      &.open{
+        height: 150px;
+        padding: 10px;
+        opacity: 1;
+      }
     }
   }
 }
