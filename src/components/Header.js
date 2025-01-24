@@ -7,7 +7,7 @@ const Header = () => {
     <header>
       <nav>
         <a href="#">
-          <img src="./image/Netflix_Logo_PMS.png" alt="로고이미지"/>
+          <img src={`${process.env.PUBLIC_URL}/image/Netflix_Logo_PMS.png`} alt="로고이미지"/>
         </a>
         <div>
           <select>
