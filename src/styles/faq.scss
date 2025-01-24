@@ -9,22 +9,29 @@
       justify-content: space-between;
       text-align: left;
       background-color: #444;
+      border-bottom: 1px solid black;
       color: $txt-color;
       width: 100%;
-      padding: 10px;
+      padding: 20px;
       font-size: $font-size-m;
       position: relative;
+      @include responsive($breakpoint-s){
+        font-size: 16px;
+      }
     }
     p{
-      background-color: #666;
+      background-color: #444;
       color: $txt-color;
       height: 0;
       opacity: 0;
       transition: 0.3s;
       font-size: $font-size-m;
+      @include responsive($breakpoint-s){
+        font-size: 16px;
+      }
       &.open{
-        height: 150px;
-        padding: 10px;
+        height: auto;
+        padding: 20px;
         opacity: 1;
       }
     }

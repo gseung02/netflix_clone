@@ -8,13 +8,23 @@
 }
 .b-icon{
   position: absolute;
-  top:20px;
-  left: 150px;
+  top:20%;
+  left: 18%;
   font-size: 60px;
+  @include responsive ($breakpoint-s){
+    top: -20px;
+    left: 40px;
+  }
 }
 .banner{
-  @include component_size;
+  width: 60%;
+  margin: 0 auto;
   padding: 20px;
+  @include responsive ($breakpoint-s){
+    width: 100%;
+    margin-top: 40px;
+    padding: 30px;
+  }
 }
 .banner-txt{
   color: $txt-color;
@@ -23,8 +33,17 @@
   background-image: linear-gradient(to right, #352038, #1f1f42);
   display: flex;
   justify-content: space-between;
+  @include responsive ($breakpoint-s){
+    display: flex;
+    flex-direction: column
+  }
   button{
     @include button-style;
+    width: 15%;
     background-color: #444;
+    @include responsive ($breakpoint-s){
+      width: 30%;
+      margin-top: 10px;
+    }
   }
 }

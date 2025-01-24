@@ -11,6 +11,10 @@
     option{
       color: #222;
     }
+    @include responsive ($breakpoint-s){
+      width: 100%;
+      margin: 0;
+    }
   }
   }
   //기본 화살포에 가상 요소 삭제
@@ -60,6 +64,10 @@
       2px -2px 0 #fff, //오른쪽 위
       -2px 2px 0 #fff, //왼쪽 아래
       2px 2px 0 #fff; //오른쪽 아래
+      @include responsive ($breakpoint-s){
+        font-size: 80px;
+        left: 60px;
+      }
     }
     img{
       margin: 10px auto;
@@ -67,5 +75,9 @@
       height: 400px;
       object-fit: cover;
       border-radius: 10px;
+      @include responsive ($breakpoint-s){
+        width: 60%;
+        height: 400px;
+      }
     }
   }

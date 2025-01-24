@@ -13,6 +13,9 @@
     @include responsive($breakpoint-m){
       flex-wrap: wrap;
     }
+    @include responsive ($breakpoint-s){
+      flex-direction: column;
+    }
     li{
       position: relative;
       width: 25%;
